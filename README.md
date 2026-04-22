@@ -26,3 +26,9 @@ Para atender aos requisitos técnicos, o sistema foi estruturado com as seguinte
 3. **Step (*):** Cada pressão na tecla `*` executa exatamente UMA instrução, permitindo acompanhar o estado dos registradores no Serial Monitor.
 
 ---
+
+## 🛠️ Pinagem Obrigatória
+O projeto utiliza barramentos organizados para simular a comunicação de dados de um processador:
+* **Display 7 Seg:** Pinos 22-28 (Barramento Paralelo)
+* **Teclado:** Pinos 30-37 (Interface de Entrada)
+* **Sensores/Atuadores:** Pinos 40-45
