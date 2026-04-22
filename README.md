@@ -19,3 +19,10 @@ Para atender aos requisitos técnicos, o sistema foi estruturado com as seguinte
 * **Registradores:** Implementação física das variáveis `PC`, `IR`, `ACC` e `FLAG_Z`.
 
 ---
+
+## 🎮 Instruções de Uso
+1. **Modo LOAD (#):** Pressione `#` para iniciar. Digite o Opcode e o Operando (ex: `2 5` para LOADK 5). Use a tecla `C` para confirmar cada linha. Pressione `#` novamente para salvar.
+2. **Modo RUN:** Pressione `A` para inicializar o Program Counter (`PC=0`).
+3. **Step (*):** Cada pressão na tecla `*` executa exatamente UMA instrução, permitindo acompanhar o estado dos registradores no Serial Monitor.
+
+---
