@@ -56,3 +56,11 @@ O sistema utiliza uma arquitetura de instruções de 4 bits para o Opcode, permi
 | 13 | 1101 | STORE | Armazena o valor do `ACC` na posição `MEM[X]`. |
 | 14 | 1110 | LOADM | Carrega em `ACC` o valor contido em `MEM[X]`. |
 | 15 | 1111 | HALT | Interrompe o Ciclo de Instrução e encerra a execução. |
+
+---
+
+##  Tratamento de Resultados e Exceções
+Para garantir a integridade dos dados e a correta interface com o usuário, o sistema trata limites representáveis:
+
+* **Overflow (> 9):** Caso o resultado de uma operação na ULA ou um valor carregado no `ACC` seja maior que a capacidade de um dígito do display, o sistema exibe o caractere `E` (Error) e emite um alerta no Monitor Serial.
+* **Resultado Negativo (< 0):** Operações que resultem em valores negativos são sinalizadas no display através do caractere `-`, indicando um valor não representável em formato decimal simples.
